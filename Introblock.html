@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+Template Name: Chillaid
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Chillaid</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<style>
+#top {padding-top: 50px}
+
+.ib-wrapper{display:block; position:relative; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
+
+/*
+The "hoc" class is a generic class used to centre a containing element horizontally
+It should be used in conjunction with a second class or ID
+*/
+.hoc{display:block; margin:0 auto;}
+
+.nospace{margin:0; padding:0; list-style:none;}
+
+.clear, .group{display:block;}
+.clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
+.clear, .clear::after, .group, .group::after{clear:both;}
+
+.heading{font-family:Georgia, "Times New Roman", Times, serif;}
+.heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:capitalize;}
+.heading.nospace{margin-bottom:0;}
+
+.btmspace-80{margin-bottom:80px;}
+
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+
+.one_quarter{width:21.8421%;}
+
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}
+
+/* Rows */
+.row0, .row0 a{}
+.row1{color:#FFFFFF; background-color:#000000;}
+.row2{color:#474747; background-color:#F4F4F4;}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#A5A6AA; background-color:#000000;}
+.row5, .row5 a{color:#A5A6AA; background-color:#282E39;}
+.coloured{color:#FFFFFF; background-color:#97A9BD;}
+
+.elements{}
+.elements-three li, .elements-four li{margin-bottom:50px;}
+.elements-three li:nth-last-child(-n+3), .elements-four li:nth-last-child(-n+4){margin-bottom:0;}/* Removes bottom margin from the last line of items - margin is restored in the media queries when items stack */
+.elements-three li:nth-child(3n+1), .elements-four li:nth-child(4n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.elements article{display:block; padding:30px 15px; border-radius:50px 0; text-align:center;}
+.elements article *{margin:0 0 15px 0; padding:0; line-height:1;}
+.elements article i{width:60px; height:60px; line-height:60px; margin-bottom:30px; font-size:1.6rem; text-align:center; border-radius:50%;}
+.elements article .heading{font-size:1.2rem; font-weight:700;}
+.elements article p{margin:0; line-height:normal;}
+
+/* Content Area */
+.ib-container{padding:80px 0;}
+
+/* Content */
+.ib-container .content{}
+
+/* Content Area */
+.elements article{color:#474747; background-color:#FFFFFF; box-shadow:0px 0px 15px rgba(0,0,0,.3);}
+.elements article:hover{color:#FFFFFF; background-color:#97A9BD;}/* Default */
+.elements article a i{color:#FFFFFF; background-color:#97A9BD;}/* Default */
+.elements article:hover a i{color:#97A9BD; background-color:#FFFFFF;}/* Default */
+
+/* ###### DELETE THE FOLLOWING IF ONLY THE DEFAULT COLOUR IS REQUIRED ###### */
+#introblocks .elements li article{color:#FFFFFF; background-color:#97A9BD;}/* Blue */
+#introblocks .elements li article a i{color:#97A9BD; background-color:#FFFFFF;}/* Blue */
+#introblocks .elements li article:hover{color:#474747; background-color:#FFFFFF !important;}
+#introblocks .elements li article:hover a i{color:#FFFFFF !important; background-color:#97A9BD;}
+#introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a i{background-color:#A197BD;}/* Purple */
+#introblocks .elements li:nth-child(2) article a i{color:#A197BD;}/* Purple */
+#introblocks .elements li:nth-child(3) article, #introblocks .elements li:nth-child(3) article:hover a i{background-color:#BDA697;}/* Brown */
+#introblocks .elements li:nth-child(3) article a i{color:#BDA697;}/* Brown */
+#introblocks .elements li:nth-child(4) article, #introblocks .elements li:nth-child(4) article:hover a i{background-color:#97BDAB;}/* Green */
+#introblocks .elements li:nth-child(4) article a i{color:#97BDAB;}/* Green */
+/* ###### END DELETE ###### */
+
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px){
+	.hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+	.hoc{max-width:95%;}
+}
+
+/* Mobile Devices ----------------------------------------------------- */
+@media screen and (max-width:978px){
+	.hoc{max-width:90%;}
+
+	#header{padding:30px 0;}
+	#header #logo{margin-top:0;}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#margin-top {10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter,.one_quarter .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0;}
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 15px 0;}
+
+	#pageintro article, #pageintro article p{max-width:none;}
+	#pageintro .heading{font-size:2rem;}
+
+	.sectiontitle{max-width:none;}
+	.shout figure, .team li, #latest > li{margin:0 auto 50px;}
+	.team li, #latest li{max-width:348px;}/* Restrict the width to the one_third grid element */
+	.elements-three li:nth-last-child(-n+3), .elements-four li:nth-last-child(-n+4){margin-bottom:50px;}
+	.elements-three li:last-child, .elements-four li:last-child, .shout figure:last-child{margin-bottom:0;}
+
+	#ctdetails figure{margin-bottom:80px;}/* Gives good separation between the two elements */
+
+	#footer{padding-bottom:50px;}/* Not needed - just looks better */
+	#footer .latestimg > li, #footer .latestimg > li:nth-last-child(-n+3){display:inline-block; float:none; width:auto; margin:0 5% 5% 0;}
+	#footer .latestimg > li:last-child{margin-bottom:0;}
+	#footer .latestimg > li img{width:auto;}
+}
+
+
+</style>
+
+
+
+
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="ib-wrapper row3">
+  <main class="hoc ib-container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80 elements elements-four">
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-hand-rock"></i></a>
+            <h6 class="heading">Feugiat fermentum</h6>
+            <p>Ac orci proin porttitor lacus eget mi pellentesque non.</p>
+          </article>
+        </li>
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-dove"></i></a>
+            <h6 class="heading">Malesuada accumsan</h6>
+            <p>Sapien sed metus congue sodales vivamus scelerisque.</p>
+          </article>
+        </li>
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-history"></i></a>
+            <h6 class="heading">Mauris placerat</h6>
+            <p>Et interdum vulputate purus nisl fringilla sapien quis.</p>
+          </article>
+        </li>
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-heartbeat"></i></a>
+            <h6 class="heading">Elementum rhoncus</h6>
+            <p>Sollicitudin dui mauris dui nunc lorem tortor pharetra.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+</html>
